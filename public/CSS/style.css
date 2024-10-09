@@ -1,0 +1,14 @@
+/* font-family: "Afacad Flux", sans-serif;
+ font-family: "Montserrat", sans-serif;
+ font-family: "Inter", serif; */
+
+body {
+  font-family: 'Inter', serif;
+}
+.card image {
+  background-position: center;
+}
+.card-subtitle,
+.card-body a {
+  font-family: 'Afacad Flux', sans-serif;
+}
