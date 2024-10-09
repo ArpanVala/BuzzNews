@@ -6,6 +6,8 @@ body {
   font-family: 'Inter', serif;
 }
 .card image {
+  object-fit: cover !important;
+  object-position: center !important;
   background-position: center;
 }
 .card-subtitle,
