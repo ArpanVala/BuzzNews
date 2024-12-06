@@ -14,3 +14,17 @@ body {
 .card-body a {
   font-family: 'Afacad Flux', sans-serif;
 }
+.masonry-grid {
+  display: flex;
+  margin-left: -15px; /* Adjust to your desired gutter */
+  width: auto;
+}
+
+.masonry-grid-column {
+  padding-left: 15px; /* Adjust to match gutter */
+  background-clip: padding-box;
+}
+
+.card {
+  margin-bottom: 15px; /* Add spacing between cards */
+}
