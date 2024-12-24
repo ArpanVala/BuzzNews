@@ -1,0 +1,49 @@
+/* Phone */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    overflow: hidden;
+    font-size: 30px;
+  }
+  .hero-content h5 {
+    font-size: 15px;
+  }
+  .hero-btn {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+  .hero img {
+    max-width: 250px;
+    float: none;
+  }
+  .text-content,
+  .text-header {
+    margin-bottom: 15px;
+  }
+  .text-content {
+    font-size: 15px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 30px;
+  }
+  .hero-content h5 {
+    font-size: 20px;
+  }
+  .text-content {
+    font-size: 18px;
+  }
+  /* Styles for tablets */
+}
+
+/* Laptop */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* Styles for laptops */
+}
+
+/* Desktop */
+@media (min-width: 1441px) {
+  /* Styles for desktops */
+}

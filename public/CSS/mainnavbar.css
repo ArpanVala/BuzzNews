@@ -1,0 +1,102 @@
+/* font-family: "Gabarito", serif;
+  font-family: "Bricolage Grotesque", serif;
+   font-family: "Afacad Flux", serif; */
+
+body {
+  background-color: #f7f8fd;
+}
+header {
+  background-color: #30303c;
+}
+.navbar-brand h4 {
+  background: linear-gradient(to right, #f7f8fd, #99e3d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Bricolage Grotesque', serif;
+  font-weight: 700;
+}
+.navbar-nav li a {
+  color: white;
+  font-family: 'gabarito', serif;
+  font-size: 18px;
+  /* border-radius: 50px; */
+  border: 3px solid transparent;
+}
+.navbar-nav li a:hover {
+  /* background-color: #99e3d4; */
+  border-bottom: 3px solid #99e3d4;
+  color: white;
+}
+.navbar-toggler {
+  padding: 1px 3px;
+  background-color: #f7f8fd;
+}
+.navbar-toggler span {
+  width: 25px;
+  padding: 3px;
+}
+/* HERO STYLE  */
+.hero {
+  margin-top: 2rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  font-family: 'gabarito', serif;
+}
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #000;
+  cursor: default;
+}
+.hero-content h1 span {
+  background: linear-gradient(to right, #08765b, #7ebdb1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Bricolage Grotesque', serif;
+  font-weight: 700;
+  border-bottom: 6px solid;
+  border-image: linear-gradient(to right, #08765b, #7ebdb1);
+  border-image-slice: 1;
+  cursor: pointer;
+}
+.hero img {
+  max-width: 450px;
+  float: right;
+}
+
+.hero-content h5 {
+  margin: 23px 0px;
+  color: #565656;
+}
+.hero-btn {
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'bricolage grotesque', serif;
+  background-color: #08765b;
+  color: #dffbed;
+  border: 5px solid #eaeae8;
+  border-radius: 10px;
+}
+.explore-topics {
+  border-radius: 20px;
+  background-color: #dffbed;
+}
+.text-header,
+.text-content {
+  font-family: 'gabarito', serif;
+  margin-bottom: 25px;
+}
+.text-header {
+  font-weight: 600;
+}
+.text-content {
+  font-weight: 400;
+  font-size: larger;
+  text-align: justify;
+}
+.credits {
+  background-color: #d8fdd8;
+  border-radius: 20px;
+}
