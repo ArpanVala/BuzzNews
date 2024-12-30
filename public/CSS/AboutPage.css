@@ -1,0 +1,19 @@
+.meet-dev {
+  border-radius: 20px;
+  background-color: #dffbed;
+}
+.dev-img img {
+  /* width: 300px; */
+  border-radius: 7px 100px 7px 100px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  border-bottom: 10px solid #08765b;
+  border-right: 10px solid #08765b;
+  transition: 0.3s 0s ease-in-out;
+}
+.dev-img img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -webkit-filter: saturate(100%);
+  filter: saturate(140%);
+}
