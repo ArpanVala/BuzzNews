@@ -1,0 +1,18 @@
+.footer p {
+  color: #c0c0c0;
+  text-decoration: none;
+  margin-bottom: 0 !important;
+}
+.footer p:active,
+.footer p:hover {
+  color: #99e3d4;
+  font-weight: 500;
+  cursor: pointer;
+}
+.footer-logo {
+  background: linear-gradient(to right, #f7f8fd, #99e3d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Bricolage Grotesque', serif;
+  font-weight: 900;
+}
