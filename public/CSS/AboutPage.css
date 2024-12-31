@@ -17,3 +17,25 @@
   -webkit-filter: saturate(100%);
   filter: saturate(140%);
 }
+.tech-used {
+  background-color: #d8fdd8;
+  border-radius: 20px;
+}
+.tech-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech-box i {
+  font-size: 65px;
+}
+.tech-box:hover {
+  box-shadow: 0px 0px 10px darkolivegreen;
+  i {
+    color: #08765b;
+  }
+}

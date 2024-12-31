@@ -25,6 +25,13 @@
   .footer h1 {
     font-size: 20px !important;
   }
+  .tech-box {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .tech-box i {
+    font-size: 32px !important;
+  }
 }
 
 /* Tablet */
@@ -37,6 +44,10 @@
   }
   .text-content {
     font-size: 18px;
+  }
+  .tech-box {
+    width: 100px !important;
+    height: 100px !important;
   }
   /* Styles for tablets */
 }

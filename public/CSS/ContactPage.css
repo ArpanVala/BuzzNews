@@ -1,0 +1,17 @@
+.connect-with-me {
+  background-color: #dffbed;
+  border-radius: 20px;
+}
+.connect-with-me .text-content {
+  font-family: 'Bricolage Grotesque', serif;
+  font-weight: 600;
+}
+.contact-input {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  font-family: 'Bricolage Grotesque', serif;
+  font-size: 20px;
+}
