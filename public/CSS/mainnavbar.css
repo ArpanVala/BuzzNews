@@ -5,6 +5,9 @@
 body {
   background-color: #f7f8fd;
 }
+a {
+  text-decoration: none;
+}
 header {
   background-color: #30303c;
 }
@@ -15,17 +18,20 @@ header {
   font-family: 'Bricolage Grotesque', serif;
   font-weight: 700;
 }
-.navbar-nav li a {
+.navbar-nav li {
   color: white;
+  margin-left: 3px;
+  padding: 2px 8px;
   font-family: 'gabarito', serif;
   font-size: 18px;
-  /* border-radius: 50px; */
+  text-decoration: none !important;
   border: 3px solid transparent;
 }
-.navbar-nav li a:hover {
-  /* background-color: #99e3d4; */
-  border-bottom: 3px solid #99e3d4;
-  color: white;
+.navbar-nav li:hover,
+.navbar-nav li:active {
+  background-color: #99e3d4;
+  border-radius: 2px;
+  color: #30303c;
 }
 .navbar-toggler {
   padding: 1px 3px;

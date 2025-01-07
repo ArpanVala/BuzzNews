@@ -6,6 +6,7 @@ import Footer from "./Components/Footer"
 import HomePage from "./Pages/HomePage"
 import AboutPage from "./Pages/AboutPage"
 import ContactPage from "./Pages/ContactPage"
+import { Routes, Route } from "react-router-dom"
 
 const App = () => {
   const [category, setCategory] = useState('general')
@@ -16,9 +17,11 @@ const App = () => {
       {/* <NavBar setCategory={setCategory} setcountry={setCountry} /> */}
       {/* <NewsBoard category={category} country={country} /> */}
       <MainNavBar />
-      {/* <HomePage /> */}
-      {/* <AboutPage /> */}
-      <ContactPage />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/About" element={<AboutPage />} />
+        <Route path="/Contact" element={<ContactPage />} />
+      </Routes>
       <Footer />
     </div>
   )
