@@ -9,9 +9,25 @@
 .contact-input {
   border: none;
   outline: none;
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 20px;
-  padding: 15px 20px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
   font-family: 'Bricolage Grotesque', serif;
-  font-size: 20px;
+  font-size: 16px;
+}
+.msg {
+  resize: none;
+}
+.contact-btn {
+  background-color: #202938;
+  color: #dffbed;
+}
+
+@media (min-width: 768px) {
+  .contact-input {
+    margin-bottom: 15px;
+    padding: 13px 20px;
+    font-size: 18px;
+  }
 }
