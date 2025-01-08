@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="col-8 col-md-6 ">
                         <div className="footer-links d-flex">
                             <div className="col-4">
-                                <Link to='/'><p className='text-content '>News</p></Link>
+                                <Link to='/News'><p className='text-content '>News</p></Link>
                             </div>
                             <div className="col-4">
                                 <Link to='/About'><p className='text-content '>About</p></Link>

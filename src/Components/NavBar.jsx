@@ -6,7 +6,7 @@ const NavBar = ({ setCategory, setCountry }) => {
                 <div className="row">
                     <div className="col-12">
                         <nav className="navbar navbar-expand-lg p-0">
-                            <a className="navbar-brand" href="#">
+                            <a className="navbar-brand" href="/">
                                 <img src={logo} alt="BuzzNews Logo" /><h4 className='d-inline-block ms-2'>BuzzNews</h4>
                             </a>
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">

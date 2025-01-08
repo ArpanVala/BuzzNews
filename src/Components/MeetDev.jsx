@@ -23,10 +23,10 @@ const MeetDev = () => {
                             </div>
                         </div>
                         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-2 mt-4">
-                            <div className="col"><Button icon={"fa-brands fa-github"} text={"Github"} /></div>
-                            <div className="col"><Button icon={"fa-brands fa-linkedin"} text={"LinkedIn"} /></div>
-                            <div className="col"><Button icon={"fa-brands fa-reddit-alien"} text={"Reddit"} /></div>
-                            <div className="col"><Button icon={"fa-brands fa-instagram"} text={"Instagram"} /></div>
+                            <div className="col"><Button icon={"fa-brands fa-github"} text={"Github"} link={"https://github.com/ArpanVala"} /></div>
+                            <div className="col"><Button icon={"fa-brands fa-linkedin"} text={"LinkedIn"} link={'https://linkedin.com/in/arpanvala/'} /></div>
+                            <div className="col"><Button icon={"fa-brands fa-reddit-alien"} text={"Reddit"} link={'https://www.reddit.com/user/Arpan_Vala/'} /></div>
+                            <div className="col"><Button icon={"fa-brands fa-instagram"} text={"Instagram"} link={'https://instagram.com/vala_aaryan01'} /></div>
                         </div>
                     </div>
                     {/* <div className="row align-items-center">

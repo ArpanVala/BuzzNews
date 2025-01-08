@@ -4,10 +4,9 @@
 
 body {
   background-color: #f7f8fd;
+  cursor: url('../../src/assets/cursor/cursor.png') !important;
 }
-a {
-  text-decoration: none;
-}
+
 header {
   background-color: #30303c;
 }
@@ -27,11 +26,19 @@ header {
   text-decoration: none !important;
   border: 3px solid transparent;
 }
-.navbar-nav li:hover,
-.navbar-nav li:active {
+.navbar-nav li:hover {
   background-color: #99e3d4;
   border-radius: 2px;
   color: #30303c;
+}
+a {
+  text-decoration: none;
+}
+a.active,
+a:active {
+  background-color: #99e3d4;
+  border-radius: 2px;
+  color: #30303c !important;
 }
 .navbar-toggler {
   padding: 1px 3px;
@@ -84,6 +91,9 @@ header {
   color: #dffbed;
   border: 5px solid #eaeae8;
   border-radius: 10px;
+}
+.hero-btn:hover {
+  border: 5px solid #c6c6c4;
 }
 .explore-topics {
   border-radius: 20px;

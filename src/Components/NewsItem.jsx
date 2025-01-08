@@ -4,7 +4,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const NewsItem = ({ news }) => {
   const { title, author, description, url, urlToImage, publishedAt } = news
   return (
-    <div className="card shadow p-1 newsCard" >
+    <div className="card shadow p-1 newsCard block" >
       <img src={urlToImage ? urlToImage : newsPlaceholder} height={'140px'} />
       <div className="card-body p-2">
         <h6 className="card-subtitle my-1 text-body-secondary">{publishedAt.slice(0, 10)}</h6>

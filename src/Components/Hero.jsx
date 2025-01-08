@@ -1,10 +1,10 @@
-import react from 'react';
 import './../../public/CSS/mainnavbar.css';
 import './../../public/CSS/media.css';
+import { useNavigate } from 'react-router-dom';
 import heroImage from '../assets/img/hero-image.svg';
 
-import rightArrow from '../assets/img/light-right.png'
 const Hero = () => {
+    const navigate = useNavigate();
     return (
         <section className="container-fluid hero">
             <div className="container">
@@ -13,7 +13,7 @@ const Hero = () => {
                         <div className="hero-content">
                             <h1>Stay Informed, Stay Ahead <br className='d-none d-md-visible' />with <span>BuzzNews</span></h1>
                             <h5>Get the latest headlines and insights from around the world, <br /> all in one place.</h5>
-                            <button className='btn-lg hero-btn'> Read News</button>
+                            <button className='btn-lg hero-btn' onClick={() => navigate('/News')}> Read News</button>
                         </div>
                     </div>
                     <div className="col-md-6 text-center">
