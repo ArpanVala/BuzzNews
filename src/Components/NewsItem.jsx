@@ -11,7 +11,7 @@ const NewsItem = ({ news }) => {
         <h5 className="card-title text-justify">{title.slice(0, 60) + "..."}</h5>
         <p className="card-text text-justify">{
           (description !== null ? description.slice(0, 90) + "..." : '[no description provided.]')}</p>
-        <a href={url} className="btn py-1 btn-warning container-fluid">Read full article<FontAwesomeIcon icon={faArrowRight} className='ps-2' /></a>
+        <a href={url} target='_blank' className="btn py-1 container-fluid">Read article<FontAwesomeIcon icon={faArrowRight} className='ps-2' /></a>
       </div>
     </ div>
   )

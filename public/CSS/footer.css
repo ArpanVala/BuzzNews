@@ -5,9 +5,10 @@
 }
 .footer p:active,
 .footer p:hover {
-  color: #99e3d4;
+  color: #dffbdf;
   font-weight: 500;
   cursor: pointer;
+  text-shadow: 0px 0px 20px #08765b;
 }
 .footer-logo {
   background: linear-gradient(to right, #f7f8fd, #99e3d4);

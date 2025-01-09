@@ -27,4 +27,14 @@ body {
 
 .card {
   margin-bottom: 15px; /* Add spacing between cards */
+  text-align: justify !important;
+}
+.card a {
+  background-color: #dffbdf;
+  color: #08765b;
+  font-size: large;
+}
+.card a:hover {
+  background-color: #08765b;
+  color: #dffbed;
 }
