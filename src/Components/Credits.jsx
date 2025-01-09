@@ -5,7 +5,7 @@ const Credits = () => {
     return (
         <div className="container-fluid">
             <div className="container">
-                <div className="credits p-4 mt-5">
+                <div className="credits p-4 mt-5 block-x">
                     <div className="row">
                         <div className="col-12">
                             <h1 className="text-header">Credits.</h1>
@@ -16,7 +16,7 @@ const Credits = () => {
                             </p>
                         </div>
                         <div className="col-12">
-                            <div className="credits-banner text-center">
+                            <div className="credits-banner text-center block" onClick={() => window.open('https://newsapi.org/')}>
                                 <p className='text-content text-center m-1'>Powered by NewsAPI</p>
                                 <img src={creditLogo} alt="logo of NewsAPI" width={250} />
                             </div>

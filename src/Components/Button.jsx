@@ -8,10 +8,11 @@ const Button = ({ icon, text, link }) => {
         }
     }
     return (
-        <div className="btn-primary d-flex gap-3 border shadow-lg align-items-center block" onClick={onButtonClick}>
+        <div className="btn-primary d-flex gap-3 border shadow-lg align-items-center" onClick={onButtonClick}>
             <h2 className='btn-primary-icon m-0'><i className={icon} /></h2>
             <h5 className='btn-primary-text m-0'>{text}</h5>
         </div>
+
     )
 }
 
