@@ -28,6 +28,7 @@ body {
 .card {
   margin-bottom: 15px; /* Add spacing between cards */
   text-align: justify !important;
+  font-family: 'Gabarito', serif;
 }
 .card a {
   background-color: #dffbdf;

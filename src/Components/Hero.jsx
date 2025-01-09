@@ -12,7 +12,7 @@ const Hero = () => {
                     <div className="col-md-6">
                         <div className="hero-content">
                             <h1>Stay Informed, Stay Ahead <br className='d-none d-md-visible' />with <span>BuzzNews</span></h1>
-                            <h5>Get the latest headlines and insights from around the world, <br /> all in one place.</h5>
+                            <h5>Get the latest headlines and insights all in one place.</h5>
                             <button className='btn-lg hero-btn' onClick={() => navigate('/News')}> Read News</button>
                         </div>
                     </div>

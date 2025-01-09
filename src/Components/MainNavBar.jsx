@@ -1,15 +1,17 @@
 import './../../public/CSS/mainnavbar.css';
+import logo from '../assets/logo3.png'
 import { NavLink, useNavigate } from 'react-router-dom';
 const MainNavBar = () => {
     const navigate = useNavigate();
     return (
-        <header className='container-fluid shadow py-2'>
+        <header className='container-fluid shadow'>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
                         <nav className="navbar navbar-expand-lg p-0">
                             <a className="navbar-brand" onClick={() => navigate('/')}>
-                                <h4 className='d-inline-block ms-2' >BuzzNews</h4>
+                                <img src={logo} alt="BuzzNews Logo" />
+                                <h4 className='d-inline-block mt-1 ms-2' >BuzzNews</h4>
                             </a>
 
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
@@ -20,7 +22,7 @@ const MainNavBar = () => {
                                     <NavLink to='/'><li className="nav-item">Home</li></NavLink>
                                     <NavLink to='/News'><li className="nav-item">News</li></NavLink>
                                     <NavLink to='/About'><li className="nav-item">About</li></NavLink>
-                                    <NavLink to='/Contact'><li className="nav-item">Contact</li></NavLink>
+                                    <NavLink to='/Contact'><li className="nav-item mb-2 m-lg-0">Contact</li></NavLink>
                                 </ul>
                             </div>
                         </nav>

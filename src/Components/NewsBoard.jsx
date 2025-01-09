@@ -11,6 +11,7 @@ const NewsBoard = ({ category, country }) => {
     let URL = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`;
     fetch(URL).then(response => response.json()).then(data => setArticles(data.articles));
   }, [category, country])
+
   return (
     <>
       <div className="container my-4">
@@ -24,9 +25,12 @@ const NewsBoard = ({ category, country }) => {
           className="masonry-grid"
           columnClassName="masonry-grid-column"
         >
-          {articles.map((news, index) => (
-            <NewsItem key={index} news={news} />
-          ))}
+          {
+            articles.map((news, index) => (
+              articles.map((news, index) => (
+                <NewsItem key={index} news={news} />
+              ))))
+          }
         </Masonry>
       </div>
     </>
