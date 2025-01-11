@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../public/CSS/Button.css'
+import '../CSS/Button.css'
 
 const Button = ({ icon, text, link }) => {
     const onButtonClick = () => {
