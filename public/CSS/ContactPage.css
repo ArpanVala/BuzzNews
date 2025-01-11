@@ -28,6 +28,7 @@
   background-color: #08765b;
   color: #dffbed;
 }
+
 @media (min-width: 768px) {
   .contact-input {
     margin-bottom: 15px;

@@ -1,7 +1,6 @@
 import React from 'react'
 import Button from './Button'
 import { ToastContainer, toast } from 'react-toastify';
-import '../../public/CSS/ContactPage.css'
 import contactImg from "../assets/img/contact.svg"
 const ConnectWithMe = () => {
     const onSubmit = async (event) => {

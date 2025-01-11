@@ -34,7 +34,8 @@
   font-size: 65px;
 }
 .tech-box:hover {
-  box-shadow: 0px 0px 10px darkolivegreen;
+  scale: calc(1.05);
+  box-shadow: 0px 0px 25px rgb(200, 212, 180);
   i {
     color: #08765b;
   }

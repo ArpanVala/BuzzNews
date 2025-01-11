@@ -2,7 +2,7 @@ import newsPlaceholder from '../assets/img/news-placeholder.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const NewsItem = ({ news }) => {
-  const { title, author, description, url, urlToImage, publishedAt } = news
+  const { title, description, url, urlToImage, publishedAt } = news
   return (
     <div className="card shadow p-1 newsCard block" >
       <img src={urlToImage ? urlToImage : newsPlaceholder} height={'140px'} />

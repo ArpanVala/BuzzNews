@@ -1,0 +1,36 @@
+/* News card css */
+
+.card image {
+  object-fit: cover !important;
+  object-position: center !important;
+  background-position: center;
+}
+.card-subtitle,
+.card-body a {
+  font-family: 'Afacad Flux', sans-serif;
+}
+.masonry-grid {
+  display: flex;
+  margin-left: -15px; /* Adjust to your desired gutter */
+  width: auto;
+}
+
+.masonry-grid-column {
+  padding-left: 15px; /* Adjust to match gutter */
+  background-clip: padding-box;
+}
+
+.card {
+  margin-bottom: 15px; /* Add spacing between cards */
+  text-align: justify !important;
+  font-family: 'Gabarito', serif;
+}
+.card a {
+  background-color: #dffbdf;
+  color: #08765b;
+  font-size: large;
+}
+.card a:hover {
+  background-color: #08765b;
+  color: #dffbed;
+}

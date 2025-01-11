@@ -1,4 +1,3 @@
-import './../../public/CSS/media.css';
 import { useNavigate } from 'react-router-dom';
 import heroImage from '../assets/img/hero-image.svg';
 
