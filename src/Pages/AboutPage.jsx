@@ -1,6 +1,6 @@
 import React from 'react'
 import MeetDev from '../Components/MeetDev'
-import "../../public/CSS/AboutPage.CSS"
+import "../CSS/AboutPage.css"
 import TechUsed from '../Components/TechUsed'
 import Thanks from "../Components/Thanks"
 

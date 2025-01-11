@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../public/CSS/ContactPage.css'
+import '../CSS/ContactPage.css'
 import ConnectWithMe from '../Components/ConnectWithMe'
 import Thanks from '../Components/Thanks'
 const ContactPage = () => {
