@@ -1,4 +1,4 @@
-import newsPlaceholder from '../assets/news-placeholder.png'
+import newsPlaceholder from '../assets/img/news-placeholder.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const NewsItem = ({ news }) => {

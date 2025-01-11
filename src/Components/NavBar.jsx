@@ -1,5 +1,4 @@
-import './../../public/CSS/mainnavbar.css';
-import logo from '../assets/logo3.png'
+import logo from '../assets/img/logo.png'
 import { NavLink, useNavigate } from 'react-router-dom';
 const NavBar = ({ setCategory, setCountry }) => {
     const navigate = useNavigate();
