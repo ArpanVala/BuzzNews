@@ -5,6 +5,7 @@ font-family: "Bricolage Grotesque", serif;
 
 body {
   font-family: 'Gabarito', serif;
+  background-color: #f7f8fd;
 }
 .text-header,
 .text-content {
@@ -67,7 +68,7 @@ a:active {
 }
 .navbar-toggler {
   padding: 1px 3px;
-  background-color: #f7f8fd;
+  background: linear-gradient(45deg, #f7f8fd, #c0c4c1);
 }
 .navbar-toggler span {
   width: 25px;
@@ -137,6 +138,7 @@ a:active {
 /* footer section css */
 footer {
   background-color: #30303c;
+  bottom: 0;
 }
 .footer p {
   color: #c0c0c0;

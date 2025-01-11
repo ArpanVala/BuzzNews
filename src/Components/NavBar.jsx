@@ -1,6 +1,6 @@
 import logo from '../assets/img/logo.png'
 import { NavLink, useNavigate } from 'react-router-dom';
-const NavBar = ({ setCategory, setCountry }) => {
+const NavBar = ({ setCategory }) => {
     const navigate = useNavigate();
     return (
         <header className='container-fluid shadow'>

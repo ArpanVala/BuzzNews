@@ -3,14 +3,14 @@ import NewsItem from "../Components/NewsItem"
 import Masonry from "react-masonry-css";
 import '../../public/CSS/NewsPage.css'
 
-const NewsPage = ({ category, country }) => {
+const NewsPage = ({ category }) => {
     const [articles, setArticles] = useState([])
 
     useEffect(() => {
 
-        let URL = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`;
+        let URL = `https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`;
         fetch(URL).then(response => response.json()).then(data => setArticles(data.articles));
-    }, [category, country])
+    }, [category])
 
     return (
         <>
