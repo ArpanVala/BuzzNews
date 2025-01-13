@@ -3,7 +3,7 @@ import NewsItem from "../Components/NewsItem"
 import Masonry from "react-masonry-css";
 import '../CSS/NewsPage.css'
 
-const NewsPage = ({ category }) => {
+const NewsPage = ({ category, country, language }) => {
     const [articles, setArticles] = useState([])
     const [error, setError] = useState(null);
 
@@ -11,14 +11,13 @@ const NewsPage = ({ category }) => {
 
         const fetchNews = async () => {
             try {
-                const response = await fetch('https://newsdata.io/api/1/latest?apikey=pub_6522158b13e3ba0d370151e0e195f914d516f');
-                // `https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`);
+                const response = await fetch(
+                    `https://newsdata.io/api/1/latest?category=${category}&country=${country}&language=${language}&apikey=${import.meta.env.VITE_API_KEY}`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 const data = await response.json();
                 setArticles(data.results || []); // Ensure articles is defined
-                console.log(data)
             } catch (err) {
                 console.error("Error fetching news:", err);
                 setError(err.message);
@@ -26,10 +25,7 @@ const NewsPage = ({ category }) => {
         };
 
         fetchNews();
-
-        // let URL = `https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`;
-        // fetch(URL).then(response => response.json()).then(data => setArticles(data.articles));
-    }, [category])
+    }, [category, country, language])
     if (error) {
         return <div className="container-fluid">
             <div className="container">
@@ -55,7 +51,7 @@ const NewsPage = ({ category }) => {
                     className="masonry-grid"
                     columnClassName="masonry-grid-column"
                 >
-                    {
+                    {articles.length === 0 ? <p className="container text-center">No Data Found !</p> :
                         articles.map((news, index) => (
                             articles.map((news, index) => (
                                 <NewsItem key={index} news={news} />

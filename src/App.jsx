@@ -9,12 +9,15 @@ import NewsPage from "./Pages/NewsPage"
 import { Routes, Router, Route, useLocation } from "react-router-dom"
 import PageNotFound from "./Pages/PageNotFound"
 const App = () => {
-  const [category, setCategory] = useState('general')
+  const [category, setCategory] = useState('top')
+  const [country, setCountry] = useState('in')
+  const [language, setLanguage] = useState('en')
+
   const location = useLocation();
 
   const renderNavbar = () => {
     if (location.pathname === "/News") {
-      return <NavBar setCategory={setCategory} />;
+      return <NavBar setCategory={setCategory} setCountry={setCountry} setLanguage={setLanguage} />;
     }
     return <MainNavBar />;
   };
@@ -26,7 +29,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/About" element={<AboutPage />} />
         <Route path="/Contact" element={<ContactPage />} />
-        <Route path="/News" element={<NewsPage category={category} />} />
+        <Route path="/News" element={<NewsPage category={category} country={country} language={language} />} />
         <Route path="/*" element={<PageNotFound />} />
       </Routes>
       <Footer />
