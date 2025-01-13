@@ -31,7 +31,7 @@ const TechUsed = () => {
                                 <div className="tech-box block-x">
                                     <i className="fa-solid fa-server"></i>
                                 </div>
-                                <p className='text-content text-center'>NewsAPI API</p>
+                                <p className='text-content text-center'>API</p>
                             </div>
                         </div>
                     </div>
