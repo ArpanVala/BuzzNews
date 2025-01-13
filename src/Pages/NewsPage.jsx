@@ -11,13 +11,14 @@ const NewsPage = ({ category }) => {
 
         const fetchNews = async () => {
             try {
-                const response = await fetch(
-                    `https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`);
+                const response = await fetch('https://newsdata.io/api/1/latest?apikey=pub_6522158b13e3ba0d370151e0e195f914d516f');
+                // `https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${import.meta.env.VITE_API_KEY}`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 const data = await response.json();
-                setArticles(data.articles || []); // Ensure articles is defined
+                setArticles(data.results || []); // Ensure articles is defined
+                console.log(data)
             } catch (err) {
                 console.error("Error fetching news:", err);
                 setError(err.message);
