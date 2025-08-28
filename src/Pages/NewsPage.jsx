@@ -52,10 +52,9 @@ const NewsPage = ({ category, country, language }) => {
                     columnClassName="masonry-grid-column"
                 >
                     {articles.length === 0 ? <p className="container text-center">No Data Found !</p> :
-                        articles.map((news, index) => (
-                            articles.map((news, index) => (
-                                <NewsItem key={index} news={news} />
-                            ))))
+                                articles.map((news, index) => (
+                                    <NewsItem key={index} news={news} />
+                            ))
                     }
                 </Masonry>
             </div>
